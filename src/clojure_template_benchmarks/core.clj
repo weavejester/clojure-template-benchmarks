@@ -23,11 +23,11 @@
 
 
 (defn simple-hiccup []
-  (hiccup/html [:span {:class "foo"} bar]))
+  (hiccup/html [:span {:class "foo"} ^String bar]))
 
 (defn list-hiccup [ceil]
   (hiccup/html [:ul (for [x (range 1 ceil)]
-               [:li x])]))
+               [:li ^Number x])]))
 
 
 (defn simple-clabango-no-fd []
